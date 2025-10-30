@@ -1,0 +1,31 @@
+name: gene_nlp
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.10
+  - pandas
+  - numpy
+  - scipy
+  - scikit-learn
+  - tqdm
+  - requests
+  - pip
+  - r-base=4.5.1
+  - r-essentials
+
+
+  - pip:
+      - openai>=1.0.0
+      - sentence-transformers==5.1.1
+      - transformers==4.57.0
+      - torch==2.2.2
+      - safetensors==0.6.2
+      - rank-bm25==0.2.2
+      - networkx==3.4.2
+      - regex==2025.9.18
+      - jinja2==3.1.6
+      - pyyaml==6.0.3
+      - packaging==25.0
+      - tqdm==4.67.1
