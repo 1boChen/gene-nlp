@@ -15,7 +15,7 @@ The workflow integrates multi-omics data, druggability information, survival and
 
 ---
 
-✅ Quick Start Summary
+## ✅ Quick Start Summary
 ```
 git lfs install
 git clone https://github.com/1boChen/gene-nlp.git
