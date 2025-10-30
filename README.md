@@ -118,8 +118,8 @@ bash scripts/run.sh
 ## 📄 6 · Input Data
 
 Place the following in data/:
-expression.csv:	Gene × sample matrix (gene in first column)
-phenotype.csv	:Sample metadata (sample_id, response)
+- expression.csv:	Gene × sample matrix (gene in first column)
+- phenotype.csv	:Sample metadata (sample_id, response)
 
 ---
 
