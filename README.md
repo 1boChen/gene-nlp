@@ -15,17 +15,35 @@ The workflow integrates multi-omics data, druggability information, survival and
 
 ---
 
-## 🗂️ Repository Layout
+## ⚙️ 1 · Prerequisites
 
-gene-nlp
-├── data # input data (CSV)
-├── external # large reference datasets (LFS)
-├── reports # analysis outputs
-├── R # numbered R scripts (01–08)
-├── src # Python scripts (LLM module)
-├── env/environment.yml # Conda environment definition
-├── scripts/run.sh # unified pipeline launcher
-├── Dockerfile # container recipe
-├── .env.example # OpenAI key template
-├── .gitattributes # Git LFS tracking rules
-└── README.md # this file
+Choose **one** setup method:
+
+### 🐋 Docker (recommended)
+
+- Install [Docker Desktop](https://docs.docker.com/get-docker/).
+
+### 🐍 Conda (for local dev)
+
+- Install [Miniconda / Anaconda](https://docs.conda.io/en/latest/miniconda.html).  
+  Then:
+
+  ```bash
+  conda env create -f env/environment.yml
+  conda activate gene_nlp
+  ```
+
+🧰 2 · Clone the Repository (with Git LFS)
+
+This repo uses Git Large File Storage
+ for big data files.
+Install and initialize LFS before cloning or pulling:
+
+```
+git lfs install
+git clone https://github.com/1boChen/gene-nlp.git
+cd gene-nlp
+git lfs pull
+```
+
+If you skip git lfs install, large files will appear as tiny pointer text files instead of real data.
