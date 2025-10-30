@@ -33,7 +33,7 @@ Choose **one** setup method:
   conda activate gene_nlp
   ```
 
-🧰 2 · Clone the Repository (with Git LFS)
+## 🧰 2 · Clone the Repository (with Git LFS)
 
 This repo uses Git Large File Storage
  for big data files.
@@ -47,3 +47,17 @@ git lfs pull
 ```
 
 If you skip git lfs install, large files will appear as tiny pointer text files instead of real data.
+
+## 🔑 3 · Configure the OpenAI API Key
+
+Copy the example file and add your key:
+```
+cp .env.example .env
+```
+
+Edit .env:
+```
+OPENAI_API_KEY=sk-your-key-here
+```
+
+
